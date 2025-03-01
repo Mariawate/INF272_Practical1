@@ -1,5 +1,8 @@
 ﻿
-@model List<INF272_Practical1.Models.MyClass>
+@model List<INF272_Practical1.Models.StudyGroupMember>
+@{
+    ViewBag.Title = "Index";
+}
 
 <h2>Study Group Members</h2>
 
@@ -14,13 +17,14 @@
     </thead>
     <tbody>
         @foreach (var member in Model)
-         { 
+        {
             <tr>
                 <td>@member.StudentNumber</td>
                 <td>@member.Name</td>
                 <td>@member.Surname</td>
                 <td>@member.EmailAddress</td>
             </tr>
-         }
+        }
     </tbody>
 </table>
+

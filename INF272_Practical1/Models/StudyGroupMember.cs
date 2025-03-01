@@ -6,10 +6,10 @@ using System.Web;
 
 namespace INF272_Practical1.Models
 {
-    public class MyClass
+    public class StudyGroupMember
     {
         [Key]
-        public int StudentNumber { get; set; }
+        public string StudentNumber { get; set; }
 
         [Required]
         public string Name { get; set; }
